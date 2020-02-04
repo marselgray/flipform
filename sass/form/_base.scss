@@ -18,6 +18,7 @@ html{
 
 body{
 	box-sizing: border-box;
+	position: relative;
 }
 
 // mobile first design
@@ -71,4 +72,9 @@ $button_text: #00214d;
 	-moz-backface-visibility: hidden;
 	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
+}
+
+
+.flipped{
+	@include transform(180);
 }
