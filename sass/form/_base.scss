@@ -46,3 +46,29 @@ body{
 		}
 	}
 }
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+// Colors
+$background: #fffffe;
+$main: #ff5470;
+$button: #00ebc7;
+$button_text: #00214d;
+
+
+
+// mixins
+@mixin transform($degrees) {
+	-webkit-transform: rotateX( $degrees + deg);
+	-moz-transform: rotateX( $degrees + deg);
+	-o-transform: rotateX( $degrees + deg);
+	transform: rotateX( $degrees + deg);
+}
+
+@mixin backface-visibility() {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}

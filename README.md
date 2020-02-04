@@ -2,5 +2,16 @@
 
 a form validation example
 
-Planning
+## Technologies Used
+
+
+## Useful Notes / Links
+
+[HTML5 input types](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types)
+
+
+## Planning
+1. Validations
+2. Front of card
+3. Back of card - needs to be responsive
 
