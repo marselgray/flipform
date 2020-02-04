@@ -1,0 +1,48 @@
+/* CSS reset */
+*, 
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+*:focus{
+	outline: none;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+body{
+	box-sizing: border-box;
+}
+
+// mobile first design
+@mixin breakpoint($breakpoint) {
+	@if $breakpoint == small {
+		@media (min-width: 37.5em){
+			@content;
+		}
+	}
+
+	@if $breakpoint == medium {
+		@media (min-width: 56.25em){
+			@content;
+		}
+	}
+
+	@if $breakpoint == large {
+		@media (min-width: 75em){
+			@content;
+		}
+	}
+
+	@if $breakpoint == xlarge {
+		@media (min-width: 112.5em){
+			@content;
+		}
+	}
+}
