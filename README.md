@@ -18,4 +18,5 @@ https://www.happyhues.co/palettes/2
 1. Validations
 2. Front of card
 3. Back of card - needs to be responsive
+4. ReCaptcha
 

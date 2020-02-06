@@ -1,33 +1,56 @@
 .form{
 
+
+	background-color: blue;;
+	padding: 10rem 2rem;
+
 	&--container{
-		display: flex;
-		flex-direction: column;
+		width: 100%;
+		position: relative;
 	}
 
 	&--box{
 		position: relative;
-		display: flex;
 
 		// fontsizes etc
 		&__basic{
 			font-size: 2rem;
+			width: 25rem;
 		}
 
 		&__required{
 			height: 5rem;
-			width: 25rem;
+			margin: 0 0 2rem 0;
+			outline: none;
+
+			-webkit-appearance: none;
+			border-style: solid;
+			border-width: 0;
 		}
 
 		&__badge{
 			width: 3rem;
-			margin: 1rem 0 0 1rem;
-			display: none;
+			visibility: hidden;
+			position: absolute;
+			left: 85%;
+			top: 10%;
 
 			svg{
 				width: 100%;
 				height: auto;
 			}
 		}
+	}
+
+	&--btn{
+		position: absolute;
+		left: 50%;
+		top: 95%;
+		transform: translate(-50%, -50%);
+		background: $button;
+		color: $button_text;
+		padding: 0.5rem 2rem;
+		border-radius: 10rem;
+		font-size: 1.6rem;
 	}
 }

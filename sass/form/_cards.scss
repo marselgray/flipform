@@ -5,14 +5,27 @@
 	width: 100%;
 	top: 50%;
 	transform: translate(0, 50%);
+
+	@include perspective(800px);
+
+	&--flip{
+		@include transition(.5s);
+		@include transform-style();
+	}
 }
 
+.front, .back{
+	@include backface-visibility;
+	display: block;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
 
 .front{
 	background-color: $main;
-	height: 100%;
     position: absolute;
-	width: 100%;
+	z-index: 0;
 	
 	@include breakpoint(large){
 		width: 70%;
@@ -37,4 +50,10 @@
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
+}
+
+.back{
+	@include transform(180);
+	position: relative;
+	z-index: 1;
 }

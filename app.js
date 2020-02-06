@@ -86,6 +86,6 @@ function checkEmail(){
 
 // returns the error for that element and changes the placeholder text
 function error(element, text){
-	element.nextElementSibling.style.display = 'block';
+	element.nextElementSibling.style.visibility = 'visible';
 	element.placeholder = text;
 }
