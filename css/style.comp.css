@@ -62,14 +62,16 @@ body {
   flex-direction: column; }
 
 .form--box {
-  position: relative; }
-  .form--box__required {
-    color: red;
+  position: relative;
+  display: flex; }
+  .form--box__basic {
     font-size: 2rem; }
+  .form--box__required {
+    color: red; }
   .form--box__badge {
-    background-color: red;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    position: absolute;
+    width: 3rem;
+    margin: 0 0 0 1rem;
     display: none; }
+    .form--box__badge svg {
+      width: 100%;
+      height: auto; }

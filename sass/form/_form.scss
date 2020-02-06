@@ -7,19 +7,26 @@
 
 	&--box{
 		position: relative;
+		display: flex;
 
-		&__required{
-			color: red;
+		// fontsizes etc
+		&__basic{
 			font-size: 2rem;
 		}
 
+		&__required{
+			color: red;
+		}
+
 		&__badge{
-			background-color: red;
-			height: 1.5rem;
-			width: 1.5rem;
-			border-radius: 50%;
-			position: absolute;
+			width: 3rem;
+			margin: 0 0 0 1rem;
 			display: none;
+
+			svg{
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 }
