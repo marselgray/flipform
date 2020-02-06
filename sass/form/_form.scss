@@ -15,12 +15,13 @@
 		}
 
 		&__required{
-			color: red;
+			height: 5rem;
+			width: 25rem;
 		}
 
 		&__badge{
 			width: 3rem;
-			margin: 0 0 0 1rem;
+			margin: 1rem 0 0 1rem;
 			display: none;
 
 			svg{

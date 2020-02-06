@@ -67,10 +67,11 @@ body {
   .form--box__basic {
     font-size: 2rem; }
   .form--box__required {
-    color: red; }
+    height: 5rem;
+    width: 25rem; }
   .form--box__badge {
     width: 3rem;
-    margin: 0 0 0 1rem;
+    margin: 1rem 0 0 1rem;
     display: none; }
     .form--box__badge svg {
       width: 100%;

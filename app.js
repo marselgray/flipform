@@ -72,7 +72,7 @@ function checkEmail(){
 	let email = document.getElementById('email');
 	let testData = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	if (email.value === ''){
-		error(email, 'Enter an Email');
+		error(email, 'Enter an Email Address');
 	} else{
 		if(testData.test(email.value)) {
 			return true;
