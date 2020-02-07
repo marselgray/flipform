@@ -30,7 +30,7 @@ body{
 	}
 
 	@if $breakpoint == medium {
-		@media (min-width: 56.25em){
+		@media (min-width: 40.25em){
 			@content;
 		}
 	}
@@ -54,8 +54,10 @@ body{
 // Colors
 $background: #fffffe;
 $main: #ff5470;
+$headline: #00214d;
 $button: #00ebc7;
 $button_text: #00214d;
+$secondary: #fde24f;
 
 
 

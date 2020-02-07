@@ -2,9 +2,14 @@
 // flipping
 const btn = document.querySelector('.front--btn');
 const flip = document.querySelector('.cont--flip');
+const close = document.querySelector('.close');
 
 btn.addEventListener('click', () => {
 	flip.classList.add('flipped');
+});
+
+close.addEventListener('click', () => {
+	flip.classList.remove('flipped');
 });
 
 
@@ -58,7 +63,7 @@ function checkPhone(){
 	let tel = document.getElementById('tel');
 	let testData = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
 	if (tel.value === ''){
-		error(tel, 'Enter a Phone Number');
+		error(tel, 'Enter Your Number');
 	} else{
 		if(testData.test(tel.value)) {
 			return true;
@@ -72,7 +77,7 @@ function checkEmail(){
 	let email = document.getElementById('email');
 	let testData = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	if (email.value === ''){
-		error(email, 'Enter an Email Address');
+		error(email, 'Enter an Email');
 	} else{
 		if(testData.test(email.value)) {
 			return true;

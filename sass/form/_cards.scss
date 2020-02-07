@@ -1,12 +1,14 @@
 
 .cont{
-	position: absolute;
-	height: 50vh;
-	width: 100%;
-	top: 50%;
-	transform: translate(0, 50%);
 
+	margin: 4rem auto;
+	width: 100%;
+	max-width: 70rem;
 	@include perspective(800px);
+
+	@include breakpoint(medium){
+		width: 75%;
+	}
 
 	&--flip{
 		@include transition(.5s);
@@ -28,7 +30,6 @@
 	z-index: 0;
 	
 	@include breakpoint(large){
-		width: 70%;
 		left: 50%;
 		transform: translate(-50%);
 	}
