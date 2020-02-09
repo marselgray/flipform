@@ -2,7 +2,7 @@
 // flipping
 const btn = document.querySelector('.front--btn');
 const flip = document.querySelector('.cont--flip');
-const close = document.querySelector('.close');
+const close = document.querySelector('.back--close');
 
 btn.addEventListener('click', () => {
 	flip.classList.add('flipped');

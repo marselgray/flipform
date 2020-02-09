@@ -57,4 +57,16 @@
 	@include transform(180);
 	position: relative;
 	z-index: 1;
+
+	&--close{
+		width: 4rem;
+		position: absolute;
+		left: 85%;
+		top: 2%;
+		cursor: pointer;
+
+		@include breakpoint(medium){
+			left: 90%;
+		}
+	}
 }

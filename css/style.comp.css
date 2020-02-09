@@ -86,6 +86,15 @@ body {
   transform: rotateX(180deg);
   position: relative;
   z-index: 1; }
+  .back--close {
+    width: 4rem;
+    position: absolute;
+    left: 85%;
+    top: 2%;
+    cursor: pointer; }
+    @media (min-width: 40.25em) {
+      .back--close {
+        left: 90%; } }
 
 .form {
   background-color: #fde24f;
