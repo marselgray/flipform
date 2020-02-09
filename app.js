@@ -91,6 +91,7 @@ function checkEmail(){
 function checkMessage(){
 	let message = document.getElementById('message');
 	if (message.value === ''){
+		message.classList.add('red');
 		message.placeholder = `Why Don't You Want to Write Me A Message?`;
 	}
 
@@ -102,4 +103,5 @@ function checkMessage(){
 function error(element, text){
 	element.nextElementSibling.style.visibility = 'visible';
 	element.placeholder = text;
+	element.classList.add('red');
 }

@@ -154,3 +154,6 @@ body {
     padding: 0.5rem 2rem;
     border-radius: 10rem;
     font-size: 1.6rem; }
+
+.red::placeholder {
+  color: #ff5470; }
