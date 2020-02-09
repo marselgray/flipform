@@ -144,16 +144,49 @@ body {
       @media (min-width: 40.25em) {
         .form--box__textarea {
           width: 85%; } }
-  .form--btn {
-    position: absolute;
-    left: 50%;
-    top: 95%;
-    transform: translate(-50%, -50%);
-    background: #00ebc7;
-    color: #00214d;
-    padding: 0.5rem 2rem;
-    border-radius: 10rem;
-    font-size: 1.6rem; }
 
 .red::placeholder {
   color: #ff5470; }
+
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 93%;
+  transform: translate(-50%, -50%); }
+  .btn--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .btn--flex__bttn {
+      color: #00214d;
+      text-decoration: none;
+      transition: 0.3s ease all;
+      font-size: 2rem;
+      text-transform: uppercase;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      padding: 1rem;
+      position: relative;
+      z-index: 10; }
+      .btn--flex__bttn:hover, .btn--flex__bttn:active {
+        color: #FFF; }
+      .btn--flex__bttn::before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        background-color: #00ebc7;
+        z-index: -2; }
+
+.btn--flex__bttn:hover, .btn--flex__bttn:active {
+  border: 3px solid #00ebc7; }
+  .btn--flex__bttn:hover::before, .btn--flex__bttn:active::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1; }

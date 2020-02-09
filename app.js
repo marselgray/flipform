@@ -15,12 +15,11 @@ close.addEventListener('click', () => {
 
 // validation
 const form = document.querySelector('.form');
-const input = document.getElementsByClassName('form--box__required');
-const badges = document.getElementsByClassName('form--box__badge');
+const submit = document.querySelector('.btn--flex');
 
-
-form.addEventListener('submit', e => {
+submit.addEventListener('click', e => {
 	e.preventDefault();
+	form.submit();
 	checkInputs();
 });
 
