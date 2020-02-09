@@ -27,6 +27,14 @@
 			font-size: 2rem;
 			width: 25rem;
 			color: $headline;
+			padding: 1rem;
+
+			border: 2px solid transparent;
+
+
+			&:focus, &:active{
+				border: 2px solid red;
+			}
 
 			&::placeholder{
 				color: $headline;
@@ -59,7 +67,7 @@
 		&__textarea{
 			height: 25rem;
 			@include breakpoint(medium){
-				// width: 100%;
+				width: 85%;
 			}
 		}
 	}

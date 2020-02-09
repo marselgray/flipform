@@ -116,7 +116,11 @@ body {
     .form--box__basic {
       font-size: 2rem;
       width: 25rem;
-      color: #00214d; }
+      color: #00214d;
+      padding: 1rem;
+      border: 2px solid transparent; }
+      .form--box__basic:focus, .form--box__basic:active {
+        border: 2px solid red; }
       .form--box__basic::placeholder {
         color: #00214d; }
     .form--box__required {
@@ -137,6 +141,9 @@ body {
         height: auto; }
     .form--box__textarea {
       height: 25rem; }
+      @media (min-width: 40.25em) {
+        .form--box__textarea {
+          width: 85%; } }
   .form--btn {
     position: absolute;
     left: 50%;

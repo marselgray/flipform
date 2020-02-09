@@ -29,6 +29,7 @@ function checkInputs(){
 	checkLastName();
 	checkPhone();
 	checkEmail();
+	checkMessage();
 }
 
 // use to validate names / text options
@@ -85,6 +86,14 @@ function checkEmail(){
 			return false;
 		}
 	}
+}
+
+function checkMessage(){
+	let message = document.getElementById('message');
+	if (message.value === ''){
+		message.placeholder = `Why Don't You Want to Write Me A Message?`;
+	}
+
 }
 
 
