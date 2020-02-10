@@ -4,9 +4,10 @@ a form validation example
 
 ## Technologies Used
 
-HTML5
-SaSS/CSS
-JavaScript
+1. HTML5
+2. Sass/CSS
+3. JavaScript
+4. Form Validation
 
 ## Useful Notes / Links
 
