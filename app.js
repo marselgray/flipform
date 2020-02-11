@@ -18,20 +18,19 @@ const form = document.querySelector('.form');
 const submit = document.querySelector('.btn--flex');
 
 submit.addEventListener('click', e => {
-	e.preventDefault();
-	checkBot();
-});
-
-// checks if a bot is filling out form and prevents submission
-function checkBot(){
 	let hidden = document.getElementById('hidden');
+
+	// checks if a bot is filling out form and prevents submission
 	if (hidden.value != ''){
 		alert('YOU ARE A BOT!');
 	} else{
+		e.preventDefault();
 		validateInputs();
-		form.submit();
+		if ( checkFirstName() && checkLastName() && checkPhone() && checkEmail() && checkMessage() ){
+			form.submit();
+		}
 	}
-}
+});
 
 // runs input functions
 function validateInputs(){
@@ -58,6 +57,7 @@ function checkFirstName(){
 		error(first, 'Enter a First Name');
 	} else{
 		alphanumeric(first.value);
+		return true;
 	}
 }
 
@@ -67,12 +67,13 @@ function checkLastName(){
 		error(last, 'Enter a Last Name');
 	} else{
 		alphanumeric(last.value);
+		return true;
 	}
 }
 
 function checkPhone(){
 	let tel = document.getElementById('tel');
-	let testData = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+	let testData = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 	if (tel.value === ''){
 		error(tel, 'Enter Your Number');
 	} else{
@@ -103,11 +104,11 @@ function checkMessage(){
 	if (message.value === ''){
 		message.classList.add('red');
 		message.placeholder = `Why Don't You Want to Write Me A Message?`;
+	} else{
+		return true;
 	}
 
 }
-
-
 
 // returns the error for that element and changes the placeholder text
 function error(element, text){
