@@ -8,7 +8,7 @@ a form validation example
 2. Sass/CSS
 3. JavaScript
 4. Form Validation
-5. ReCaptcha 
+5. reCaptcha 
 
 ## Useful Notes / Links
 
@@ -17,9 +17,6 @@ a form validation example
 [CSS Tricks Form Validation](https://css-tricks.com/form-validation-part-1-constraint-validation-html/)
 
 
-## ReCaptcha Notes
-This form uses a similar Google reCaptcha v3 in that there is a hidden input field in the form. Bots are attracted to this field and when they fill it out and submit the form, the form is not sent. Unlike traditional reCaptcha which can be ugly and distracting to users, this reCaptacha is invisible.
-
 ## Planning
 1. Validations
 2. Front of card
@@ -27,3 +24,17 @@ This form uses a similar Google reCaptcha v3 in that there is a hidden input fie
 4. ReCaptcha - self made / mimics what Google recaptcha v3 does
 5. SVGs
 6. Colors - [Happy Hues](https://www.happyhues.co/palettes/2)
+
+
+## Images: 
+
+Front
+![Form Front](https://marselgray.github.io/theultimateform/images/front.jpg)
+
+Back
+![Form Back](https://marselgray.github.io/theultimateform/images/back.jpg)
+
+### reCaptcha Notes
+This form uses a similar Google reCaptcha v3 in that there is a hidden input field in the form. Bots are attracted to this field and when they fill it out and submit the form, the form is not sent. Unlike traditional reCaptcha which can be ugly and distracting to users, this reCaptacha is invisible.
+
+![Form reCaptcha](https://marselgray.github.io/theultimateform/images/bot.jpg)
