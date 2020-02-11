@@ -8,6 +8,7 @@ a form validation example
 2. Sass/CSS
 3. JavaScript
 4. Form Validation
+5. ReCaptcha 
 
 ## Useful Notes / Links
 
@@ -15,6 +16,9 @@ a form validation example
 
 [CSS Tricks Form Validation](https://css-tricks.com/form-validation-part-1-constraint-validation-html/)
 
+
+## ReCaptcha Notes
+This form uses a similar Google reCaptcha v3 in that there is a hidden input field in the form. Bots are attracted to this field and when they fill it out and submit the form, the form is not sent. Unlike traditional reCaptcha which can be ugly and distracting to users, this reCaptacha is invisible.
 
 ## Planning
 1. Validations
