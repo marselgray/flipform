@@ -19,11 +19,22 @@ const submit = document.querySelector('.btn--flex');
 
 submit.addEventListener('click', e => {
 	e.preventDefault();
-	form.submit();
-	checkInputs();
+	checkBot();
 });
 
-function checkInputs(){
+// checks if a bot is filling out form and prevents submission
+function checkBot(){
+	let hidden = document.getElementById('hidden');
+	if (hidden.value != ''){
+		alert('YOU ARE A BOT!');
+	} else{
+		validateInputs();
+		form.submit();
+	}
+}
+
+// runs input functions
+function validateInputs(){
 	checkFirstName();
 	checkLastName();
 	checkPhone();

@@ -20,6 +20,6 @@ a form validation example
 1. Validations
 2. Front of card
 3. Back of card - needs to be responsive
-4. ReCaptcha
+4. ReCaptcha - self made / mimics what Google recaptcha v3 does
 5. SVGs
 6. Colors - [Happy Hues](https://www.happyhues.co/palettes/2)
