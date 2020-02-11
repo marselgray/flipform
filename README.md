@@ -24,6 +24,7 @@ a form validation example
 4. ReCaptcha - self made / mimics what Google recaptcha v3 does
 5. SVGs
 6. Colors - [Happy Hues](https://www.happyhues.co/palettes/2)
+7. Clear items if user clicks back on them.
 
 
 ## Images: 

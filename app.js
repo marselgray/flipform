@@ -55,6 +55,7 @@ function checkFirstName(){
 	let first = document.getElementById('firstname');
 	if (first.value === ''){
 		error(first, 'Enter a First Name');
+		fillForm(first);
 	} else{
 		alphanumeric(first.value);
 		return true;
@@ -65,6 +66,7 @@ function checkLastName(){
 	let last = document.getElementById('lastname');
 	if (last.value === ''){
 		error(last, 'Enter a Last Name');
+		fillForm(last);
 	} else{
 		alphanumeric(last.value);
 		return true;
@@ -76,6 +78,7 @@ function checkPhone(){
 	let testData = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 	if (tel.value === ''){
 		error(tel, 'Enter Your Number');
+		fillForm(tel);
 	} else{
 		if(testData.test(tel.value)) {
 			return true;
@@ -90,6 +93,7 @@ function checkEmail(){
 	let testData = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	if (email.value === ''){
 		error(email, 'Enter an Email');
+		fillForm(email);
 	} else{
 		if(testData.test(email.value)) {
 			return true;
@@ -104,6 +108,11 @@ function checkMessage(){
 	if (message.value === ''){
 		message.classList.add('red');
 		message.placeholder = `Why Don't You Want to Write Me A Message?`;
+
+		message.addEventListener('click', () =>{
+			message.classList.remove('red');
+		})
+
 	} else{
 		return true;
 	}
@@ -115,4 +124,13 @@ function error(element, text){
 	element.nextElementSibling.style.visibility = 'visible';
 	element.placeholder = text;
 	element.classList.add('red');
+}
+
+// once a user clicks on the form to fill it out after a failure to fill out form, the 
+// stop sign should disappear
+function fillForm(element){
+	element.addEventListener('click', () =>{
+		element.classList.remove('red');
+		element.nextElementSibling.style.visibility = 'hidden';
+	})
 }
