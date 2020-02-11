@@ -68,5 +68,11 @@
 		@include breakpoint(medium){
 			left: 90%;
 		}
+
+		&:hover{
+			svg{
+				stroke: $main;
+			}
+		}
 	}
 }

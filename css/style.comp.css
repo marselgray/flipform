@@ -95,6 +95,8 @@ body {
     @media (min-width: 40.25em) {
       .back--close {
         left: 90%; } }
+    .back--close:hover svg {
+      stroke: #ff5470; }
 
 .form {
   background-color: #fde24f;
