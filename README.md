@@ -29,7 +29,7 @@ a form validation example
 ## Images: 
 
 Front
-![Form Front](https://marselgray.github.io/theultimateform/images/front.jpg)
+![](./images/front.jpg)
 
 Back
 ![Form Back](https://marselgray.github.io/theultimateform/images/back.jpg)
