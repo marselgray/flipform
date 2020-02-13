@@ -28,6 +28,8 @@ submit.addEventListener('click', e => {
 		validateInputs();
 		if ( checkFirstName() && checkLastName() && checkPhone() && checkEmail() && checkMessage() ){
 			form.submit();
+			flip.classList.remove('flipped');
+			btn.innerText = 'Thank You For Your Message';
 		}
 	}
 });
